@@ -53,15 +53,15 @@
 
         .btn:hover {
             background-color: black;
-            color: #00abf0;
+            color: #9333ea;
             border: 2px solid #00abf0;
         }
 
         /* Contact Section */
         .contact {
-            max-width: 60vw;
+            max-width: 70vw;
             margin: auto;
-            padding: 80px 10px;
+            padding: 50px 10px;
         }
 
         .contact h1 {
@@ -73,12 +73,16 @@
 
         .contact-container {
             display: flex;
+            
+            max-width: 90vw;
+            /* align-items: center; */
+            justify-content: space-between;
             gap: 60px;
         }
 
         /* Left Info */
         .contact-info {
-            flex: 1;
+            flex: 2;
         }
 
         .info-box {
@@ -87,23 +91,19 @@
             gap: 15px;
             margin-bottom: 25px;
             font-size: 16px;
+            transition: 0.5s;
         }
 
         .info-box i {
-            font-size: 22px;
+            font-size: 45px;
             color: #00abf0;
             min-width: 30px;
+            overflow: cover;
+            
+            
         }
 
-        .info-box a {
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .info-box a:hover {
-            color: #00abf0;
-        }
-
+        
         /* Right Form */
         .contact-form {
             flex: 1;
@@ -116,7 +116,7 @@
             margin-bottom: 20px;
             color: #00abf0;
         }
-
+        
         .contact-form input,
         .contact-form textarea {
             width: 100%;
@@ -129,15 +129,50 @@
             color: white;
             font-size: 14px;
         }
-
+        
         .contact-form textarea {
             resize: none;
             height: 120px;
         }
-
+        
         .contact-form button {
             width: 100%;
             cursor: pointer;
+        }
+        .info-box-details span{
+            color: rgba(211, 211, 211, 0.736);
+        }
+        .info-box-details a{
+            color: rgba(211, 211, 211, 0.736);
+            text-decoration: none;
+        }
+        .info-box-details:hover{
+            color:white;
+        }
+        
+        .info-box-details{
+            display: flex;
+            flex-direction: column;
+            /* color: lightgray; */
+            transition: 0.5s;
+        }
+        .info-box:hover{
+            transform: scale(1.03);
+        }
+        .info-box:hover .info-box-details span{
+            color: white;
+        }
+        .info-box:hover .info-box-details a{
+            color:#00abf0
+        }
+        
+        .info-box1 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            font-size: 16px;
+
         }
 
         /* Responsive */
@@ -157,6 +192,9 @@
             .contact h1 {
                 font-size: 32px;
             }
+            .info-box i {
+                font-size: 40px;
+            }
         }
     </style>
 </head>
@@ -175,24 +213,41 @@
 
             <!-- Left Side Info -->
             <div class="contact-info">
+                <div class="info-box1"><p>
+Always open to meaningful conversations, collaborations, and new opportunities.
+Let’s connect and build something great together.
+</p>
+</div>
                 <div class="info-box">
                     <i class="fa-solid fa-envelope"></i>
-                    <span>kajejaiswal@gmail.com</span>
+                    <div class="info-box-details">
+                        <span>Email</span>
+                        <span>kajejaiswal@gmail.com</span>
+                    </div>
                 </div>
 
                 <div class="info-box">
                     <i class="fa-solid fa-phone"></i>
-                    <span>9648338870</span>
+                    <div class="info-box-details">
+                        <span>Phone</span>
+                        <span>9648338870</span>
+                    </div>
                 </div>
 
                 <div class="info-box">
                     <i class="fa-brands fa-linkedin"></i>
-                    <a href="#">linkedin.com/in/yourprofile</a>
+                    <div class="info-box-details">
+                        <span>Linkedin</span>
+                        <a href="#">linkedin.com/in/yourprofile</a>
+                    </div>
                 </div>
 
                 <div class="info-box">
                     <i class="fa-brands fa-github"></i>
-                    <a href="#">github.com/yourusername</a>
+                    <div class="info-box-details">
+                        <span>GitHub</span>
+                        <a href="#">github.com/yourusername</a>
+                    </div>
                 </div>
             </div>
 

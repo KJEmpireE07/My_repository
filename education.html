@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Krish</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        body {
+            background-color: #081b29;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 60vw;
+            height: 100px;
+            margin: auto;
+        }
+
+        nav span {
+            font-size: 32px;
+            font-weight: bold;
+            
+        }
+        
+        nav a {
+            text-decoration: none;
+            /* margin-left: 15px; */
+        }
+        .nav-options {
+            display: flex;
+            /* position: relative; */
+            z-index: 1;
+            gap: 30px;
+
+        }
+
+        .nav-options a {
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-options a:hover,
+        .nav-options a.active {
+            color: #00abf0;
+            transform: scale(1.05);
+        }
+
+        /* EDUCATION */
+        .education {
+            max-width: 60vw;
+            margin: auto;
+            padding: 60px 10px;
+        }
+
+        .education h1 {
+            text-align: center;
+            font-size: 42px;
+            color: #00abf0;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            opacity: 0.8;
+            margin-bottom: 60px;
+        }
+
+        /* TIMELINE */
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 14px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #00abf0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 6px;
+            top: 10px;
+            width: 18px;
+            height: 18px;
+            background-color: #00abf0;
+            border-radius: 50%;
+        }
+
+        .timeline-content {
+            background-color: #0a2233;
+            padding: 25px 30px;
+            border-radius: 16px;
+            border-left: 4px solid #00abf0;
+            transition: 0.4s;
+        }
+
+        .timeline-content:hover {
+            transform: translateX(6px);
+            box-shadow: 0 0 18px #9333ea;
+        }
+
+        .timeline-content h2 {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        .timeline-content h3 {
+            font-size: 17px;
+            color: #00abf0;
+            margin-bottom: 4px;
+        }
+
+        .institute {
+            font-size: 15px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .edu-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .edu-info span i {
+            color: #00abf0;
+            margin-right: 6px;
+        }
+
+        .subjects {
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 1300px) {
+            nav {
+                max-width: 90vw;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .nav-options {
+                gap: 15px;
+            }
+            nav span {
+                font-size: 28px;
+            }
+
+            .nav-options a {
+                font-size: 15px;
+            }
+
+            nav span {
+                align-self: flex-start;
+            }
+
+            nav,
+            nav,
+            .education {
+                max-width: 90vw;
+            }
+
+            .education h1 {
+                font-size: 32px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <span>Krish.</span>
+        <div class="nav-options">
+
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="education">
+        <h1>Education</h1>
+        <p class="subtitle">My academic journey and achievements</p>
+
+        <div class="timeline">
+
+            <!-- B.Tech -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2>Bachelor of Technology (B.Tech)</h2>
+                    <h3>Computer Science & Engineering</h3>
+                    <div class="institute">KIET Group of Institutions</div>
+
+                    <div class="edu-info">
+                        <span><i class="fa-solid fa-calendar"></i>2025 – 2029</span>
+                        <span><i class="fa-solid fa-user-graduate"></i>First Year</span>
+                        <span><i class="fa-solid fa-award"></i>CGPA: ? / 10</span>
+                    </div>
+
+                    <div class="subjects">
+                        <strong>Relevant Coursework:</strong>
+                        Data Structures & Algorithms, Web Technologies,
+                        Database Management, Software Engineering
+                    </div>
+                </div>
+            </div>
+
+            <!-- Class 12 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2>Higher Secondary (Class 12)</h2>
+                    <h3>Science Stream (PCM)</h3>
+                    <div class="institute">Sunbeam School Mughalsarai</div>
+
+                    <div class="edu-info">
+                        <span><i class="fa-solid fa-calendar"></i>2023 – 2024</span>
+                        <span><i class="fa-solid fa-percent"></i>Percentage: 83.4%</span>
+                    </div>
+
+                    <div class="subjects">
+                        <strong>Subjects:</strong>
+                        Physics, Chemistry, Mathematics
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
